@@ -18,5 +18,6 @@ jobs:
       - name: Deploy to Github
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: build # 打包的内容放到build分支下
           folder: dist
