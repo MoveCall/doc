@@ -1,20 +1,21 @@
-# doc-test
+# dumi app
 
-A static site base on [dumi](https://d.umijs.org).
+## Getting Started
 
-## Development
+Install dependencies,
 
 ```bash
-# install dependencies
-$ npm install
-
-# start dev server
-$ npm start
-
-# build docs
-$ npm run build
+$ npm i
 ```
 
-## LICENSE
+Start the dev server,
 
-MIT
+```bash
+$ npm start
+```
+
+Build site app,
+
+```bash
+$ npm run build
+```
