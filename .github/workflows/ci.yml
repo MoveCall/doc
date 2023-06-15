@@ -26,4 +26,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: build # 打包的内容放到build分支下
           folder: dist
-          target_folder: web
+          # target_folder: web
