@@ -14,7 +14,7 @@ jobs:
     steps:
       # 拉代码
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v1
 
       # 下载node，我这里指定了15.x，这个版本可随意，高于dumi规定的node版本即可
       - name: Use Node.js
