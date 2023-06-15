@@ -36,6 +36,5 @@ jobs:
 #           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_token: ${{ secrets.NPM_TOKEN }}
           branch: build # 打包的内容放到build分支下
-          # folder: dist
-          publish_dir: ./dist
+          folder: dist
           # target_folder: web
