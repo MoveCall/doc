@@ -20,12 +20,10 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 18.x
+          node-version: 16.x
 
       - name: Build Proiect
         run: |
-          npm -v
-          npm ls
           npm install npm@8.19.2
           npm run build
       # 文档编译命令，如果是 react 模板需要修改为 npm run docs:build
