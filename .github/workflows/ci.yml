@@ -1,23 +1,33 @@
 name: github pages hi
 
+# 只有main分支发生push事件时触发
 on:
   push:
     branches:
       - main # default branch
 
+# 工作流
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # 运行环境
+
     steps:
-      - uses: actions/checkout@v3
+      # 拉代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       # 下载node，我这里指定了15.x，这个版本可随意，高于dumi规定的node版本即可
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - run: npm install
+
+      - name: Build Proiect
+        run: |
+          npm install
+          npm run build
       # 文档编译命令，如果是 react 模板需要修改为 npm run docs:build
-      - run: npm run build
+      
 
       # 部署到github
       - name: Deploy to Github
