@@ -1,4 +1,4 @@
-name: github pages hi
+name: github pages
 
 # 只有main分支发生push事件时触发
 on:
@@ -36,5 +36,6 @@ jobs:
 #           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_token: ${{ secrets.NPM_TOKEN }}
           branch: build # 打包的内容放到build分支下
-          folder: dist
+          # folder: dist
+          publish_dir: ./dist
           # target_folder: web
