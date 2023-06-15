@@ -22,3 +22,7 @@ hello
 | --------- | ----------- |
 | Header    | Title       |
 | Paragraph | Text        |
+
+:::warning
+这是一条警告信息
+:::
