@@ -26,10 +26,9 @@ jobs:
         run: |
           npm install
           npm run build
-          npx browserslist@latest --update-db
 
       # 文档编译命令，如果是 react 模板需要修改为 npm run docs:build
-      
+      # npx browserslist@latest --update-db
 
       # 部署到github
       - name: Deploy to Github
