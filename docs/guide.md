@@ -102,7 +102,7 @@ Love**is**bold
 
 ## 图片语法
 
-![这是图片](https://cloud-osmar.oss-cn-shanghai.aliyuncs.com/picture/R-C.png 'Magic Gardens')
+![这是图片](https://cloud-sh.oss-cn-shanghai.aliyuncs.com/picture/R-C.png 'Magic Gardens')
 
 - 链接图片
 
