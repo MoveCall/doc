@@ -33,7 +33,8 @@ jobs:
       - name: Deploy to Github
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: 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
           branch: build # 打包的内容放到build分支下
           folder: dist
           # target_folder: web
