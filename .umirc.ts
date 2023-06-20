@@ -4,7 +4,7 @@ const repo = 'doc'; // 项目名
 
 export default defineConfig({
   title: 'Site Name',
-  mode: 'site',
+  mode: 'doc',
   devServer: {
     port: 5001, // 自定义端口号
   },
