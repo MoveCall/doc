@@ -40,4 +40,4 @@ if __name__ == "__main__":
 
 ## 运行界面
 
--![这是图片](pic/py-ui-button-run.png 'Magic Gardens')
+-![这是图片](https://cloud-sh.oss-cn-shanghai.aliyuncs.com/picture/py-ui-button-run.png 'Magic Gardens')
