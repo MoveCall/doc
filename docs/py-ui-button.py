@@ -1,6 +1,3 @@
-# Python UI Button
-
-```python
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from ttkbootstrap.dialogs import Messagebox
@@ -34,10 +31,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-```
-
-## 运行界面
-
--![这是图片](pic/py-ui-button-run.png 'Magic Gardens')
