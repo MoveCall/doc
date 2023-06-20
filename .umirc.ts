@@ -31,14 +31,24 @@ export default defineConfig({
     },
   ],
 
-  menubar: {
+  menus: {
     '/python': [
       {
         title: '菜单项',
         path: '菜单路由（可选）',
         children: [
           // 菜单子项（可选）
-          'guide/index.md', // 对应的 Markdown 文件，路径是相对于 resolve.includes 目录识别的
+          'python/py-ui-button.md', // 对应的 Markdown 文件，路径是相对于 resolve.includes 目录识别的
+          'python/py-pyinstaller.md',
+        ],
+      },
+      {
+        title: '菜单项2',
+        path: '菜单路由（可选）',
+        children: [
+          // 菜单子项（可选）
+          'python/py-ui-button.md', // 对应的 Markdown 文件，路径是相对于 resolve.includes 目录识别的
+          'python/py-pyinstaller.md',
         ],
       },
     ],
