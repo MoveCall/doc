@@ -25,3 +25,38 @@ pyinstaller -F -i logo.ico main.py
 ```
 
 - 将 Python 文件“main.py”打包单个可执行文件，图标为“logo.ico”,
+
+### 打包一个包含 x.dll 的 exe
+
+先编译一遍
+
+```python
+pyinstall -Fw .\main.py
+```
+
+修改 **main.spec**,在**datas**中添加 x.dll 文件
+
+```python
+a = Analysis(
+    ['main.py'],
+    pathex=[],
+    binaries=[],
+    datas=[('xxx.dll', '.')],
+    hiddenimports=[],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    win_no_prefer_redirects=False,
+    win_private_assemblies=False,
+    cipher=block_cipher,
+    noarchive=False,
+)
+
+```
+
+最后再打包**main.spec**
+
+```python
+pyinstall .\main.spec
+```
