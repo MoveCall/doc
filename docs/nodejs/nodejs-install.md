@@ -41,3 +41,9 @@ npm -v
 ```cmd
 sudo npm i -g npm
 ```
+
+安装指定版本的 npm
+
+```cmd
+sudo npm install -g npm@9.7.2
+```
